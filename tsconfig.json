@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "esnext",
+    "outDir": "./build",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "moduleResolution": "nodenext",
+    "module": "nodenext"
+    // "declaration": true
+  },
+  "type": "module",
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "**/*.d.ts", "*.d.ts"]
+}
