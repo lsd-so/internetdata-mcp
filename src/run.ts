@@ -7,7 +7,6 @@ export const applyRunTool = (server: McpServer) => {
     { code: z.string() },
     async ({ code }) => {
       // Here is where we would be running the provided code
-
       return {
         content: [{
           type: "text",
