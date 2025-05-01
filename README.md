@@ -100,7 +100,11 @@ Or by pressing `Command+k` (or `Ctrl+k` for Linux/Windows). Once you've done so,
 
 ![Screen recording of the transcriber flow](media/transcriber.gif)
 
-After which, you'll have produced LSD that you can publish [using the languege](#using-the-language).
+With the generated LSD, you can edit the aliases like so:
+
+![Screen recording of editing LSD code](media/aliasing.gif)
+
+After which you can publish [using the languege](#using-the-language).
 
 ### Using the language
 
