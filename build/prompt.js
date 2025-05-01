@@ -5,13 +5,15 @@ const zod_1 = require("zod");
 const applySimplePrompt = (server) => {
     server.prompt("simple", { request: zod_1.z.string() }, ({ request }) => {
         return {
-            messages: [{
+            messages: [
+                {
                     role: "user",
                     content: {
                         type: "text",
-                        text: `Here's a simple request: ${request}`
-                    }
-                }]
+                        text: `Here's a simple request: ${request}`,
+                    },
+                },
+            ],
         };
     });
 };

@@ -7,10 +7,12 @@ const applyRunTool = (server) => {
     server.tool("run_lsd", { code: zod_1.z.string() }, async ({ code }) => {
         const result = await (0, lsd_1.runLSD)(code);
         return {
-            content: [{
+            content: [
+                {
                     type: "text",
-                    text: JSON.stringify(result)
-                }],
+                    text: JSON.stringify(result),
+                },
+            ],
         };
     });
 };
