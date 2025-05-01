@@ -104,7 +104,7 @@ With the generated LSD, you can edit the aliases like so:
 
 ![Screen recording of editing LSD code](media/aliasing.gif)
 
-After which you can publish [using the languege](#using-the-language).
+After which you can publish [using the language](#using-the-language).
 
 ### Using the language
 
