@@ -1,18 +1,29 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 
-export const applySimplePrompt = (server: McpServer) => {
-  server.prompt("simple", { request: z.string() }, ({ request }) => {
-    return {
-      messages: [
-        {
-          role: "user",
-          content: {
-            type: "text",
-            text: `Here's a simple request: ${request}`,
+import { filterDocs } from "./docs";
+import { runLSD } from "./lsd";
+
+export const applyResearchPrompt = (server: McpServer) => {
+  server.prompt(
+    "lsd_research",
+    { request: z.string() },
+    async ({ request }) => {
+      const docs = filterDocs(
+        await runLSD(`SCAN https://lsd.so/docs/database/language`),
+      );
+
+      return {
+        messages: [
+          {
+            role: "user",
+            content: {
+              type: "text",
+              text: `You are a benevolent agent with access to a novel programming language named LSD. Here's the documentation:\n\n${JSON.stringify(docs)}\n\nIt may be helpful to first SELECT HTML from a URL if you're uncertain about which subpage some data or information exists on. Using the "run_lsd" tool, help me fulfill the following request: ${request}`,
+            },
           },
-        },
-      ],
-    };
-  });
+        ],
+      };
+    },
+  );
 };

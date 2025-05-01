@@ -7,13 +7,15 @@
     "lsd": "./build/index.js"
   },
   "scripts": {
-    "build": "rm -rf build/* && tsc && chmod 755 build/index.js"
+    "build": "rm -rf build/* && tsc && chmod 755 build/index.js",
+    "format": "prettier --write src/*.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.10.2",
     "@types/express": "^5.0.1",
     "express": "^5.1.0",
     "internetdata": "1.1.15",
+    "prettier": "^3.5.3",
     "typescript": "^5.8.3",
     "zod": "^3.24.3"
   }

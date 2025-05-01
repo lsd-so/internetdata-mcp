@@ -9,7 +9,7 @@ const docs_1 = require("./docs");
 (0, docs_1.applyDocsResource)(mcp_1.server);
 (0, lookup_1.applyLookupResource)(mcp_1.server);
 (0, run_1.applyRunTool)(mcp_1.server);
-(0, prompt_1.applySimplePrompt)(mcp_1.server);
+(0, prompt_1.applyResearchPrompt)(mcp_1.server);
 (async function () {
     await mcp_1.server.connect(new stdio_js_1.StdioServerTransport());
 })();
