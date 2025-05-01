@@ -104,4 +104,8 @@ After which, you'll have produced LSD that you can publish [using the languege](
 
 ### Using the language
 
+From the workbench, simply edit to publish a trip.
+
+![A screen recording of filling out trip details](media/save_to_trip.gif)
+
 ## Extending capabilities with TypeScript
