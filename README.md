@@ -76,7 +76,7 @@ $ git clone https://github.com/lsd-so/mcp.git
 
 ## Example of usage
 
-![Screen recording of using the `lsd_research` prompt](https://pub-662d5a25493347a99b839351ec266583.r2.dev/lsd_research_claude.gif)
+![Screen recording of using the `lsd_research` prompt](media/lsd_research_claude.gif)
 
 ## Extending capabilities with LSD
 
