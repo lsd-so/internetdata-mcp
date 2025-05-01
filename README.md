@@ -11,8 +11,6 @@ This is the updated MCP server for [LSD](https://lsd.so). The reason behind this
   * [Using an MCP registry](#using-an-mcp-registry)
   * [From source](#from-source)
 * [Example of usage](#example-of-usage)
-  * [Walkthrough](#walkthrough)
-  * [Comparison to o3 with web search](#comparison-to-o3-with-web-search)
 * [Extending capabilities with LSD](#extending-capabilities-with-lsd)
   * [From the bicycle browser](#from-the-bicycle-browser)
   * [Using the language](#using-the-language)
@@ -78,9 +76,7 @@ $ git clone https://github.com/lsd-so/mcp.git
 
 ## Example of usage
 
-### Walkthrough
-
-### Comparison to o3 with web search
+![Screen recording of using the `lsd_research` prompt](https://pub-662d5a25493347a99b839351ec266583.r2.dev/lsd_research_claude.gif)
 
 ## Extending capabilities with LSD
 
