@@ -2,7 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.applyDocsResource = exports.filterDocs = void 0;
 const lsd_1 = require("./lsd");
-const filterDocs = (result) => result.filter((row) => row["URL"] === "https://lsd.so/docs/database/language/types/keywords/assignable/target" ||
+const filterDocs = (result) => result.filter((row) => row["URL"] ===
+    "https://lsd.so/docs/database/language/types/keywords/assignable/target" ||
     (![
         "https://lsd.so/docs/database/language/standard",
         "https://lsd.so/docs/database/language/sensitive_values",
