@@ -9,7 +9,6 @@ applyLookupResource(server);
 applyRunTool(server);
 applySimplePrompt(server);
 
-
 (async function() {
   await server.connect(new StdioServerTransport());
 })();

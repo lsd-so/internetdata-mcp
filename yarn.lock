@@ -62,7 +62,7 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.5.tgz#1ef302e01cf7d2b5a0fa526790c9123bf1d06690"
   integrity sha512-/pyBZWSLD2n0dcHE3hq8s8ZvcETHtEuF+3E7XVt0Ig2nvsVQXdghHVcEkIWjy9A0wKfTn97a/PSDYohKIlnP/w==
 
-"@types/node@*":
+"@types/node@*", "@types/node@^22.15.2":
   version "22.15.3"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-22.15.3.tgz#b7fb9396a8ec5b5dfb1345d8ac2502060e9af68b"
   integrity sha512-lX7HFZeHf4QG/J7tBZqrCAXwz9J5RD56Y6MpP0eJkka8p+K0RY/yBTW7CYFJ4VGCclxqOLKmiGP5juQc6MKgcw==
@@ -378,6 +378,16 @@ inherits@2.0.4:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
+internetdata@1.1.15:
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/internetdata/-/internetdata-1.1.15.tgz#8bc98deb234a116286297b63545ec522c40d9d52"
+  integrity sha512-WSbllLQcVURNMuYaoadS+kk/3uPrRbuodS8unoRAXYRBtbbEzuPAOmxDMJkduAMZSqCBKbtDhBLvVRsjLY10xQ==
+  dependencies:
+    "@types/node" "^22.15.2"
+    postgres "^3.4.5"
+    typescript "^5.8.3"
+    zod "^3.24.3"
+
 ipaddr.js@1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.9.1.tgz#bff38543eeb8984825079ff3a2a8e6cbd46781b3"
@@ -473,6 +483,11 @@ pkce-challenge@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/pkce-challenge/-/pkce-challenge-5.0.0.tgz#c3a405cb49e272094a38e890a2b51da0228c4d97"
   integrity sha512-ueGLflrrnvwB3xuo/uGob5pd5FN7l0MsLf0Z87o/UQmRtwjvfylfc9MurIxRAWywCYTgrvpXBcqjV4OfCYGCIQ==
+
+postgres@^3.4.5:
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/postgres/-/postgres-3.4.5.tgz#1ef99e51b0ba9b53cbda8a215dd406725f7d15f9"
+  integrity sha512-cDWgoah1Gez9rN3H4165peY9qfpEo+SA61oQv65O3cRUE1pOEoJWwddwcqKE8XZYjbblOJlYDlLV4h67HrEVDg==
 
 proxy-addr@^2.0.7:
   version "2.0.7"
