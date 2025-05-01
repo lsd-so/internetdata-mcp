@@ -88,7 +88,19 @@ $ git clone https://github.com/lsd-so/mcp.git
 
 ## Extending capabilities with LSD
 
+For scenarios where you'd like to teach the MCP client a "skill", you can do so with an [LSD trip](https://lsd.so/docs/database/trips). Ultimately, a "trip" is a [published module](https://docs.npmjs.com/about-npm) consisting of an LSD program whether it was derived by [interacting with our local browser](#from-the-bicycle-browser) or by [directly publishing a trip](#directly-publishing-a-trip).
+
 ### From the bicycle browser
+
+From the Bicycle browser you can derive LSD by using our "click language", this can be activated by clicking on the transcriber icon in the top right:
+
+![Screen recording of clicking on the transcriber icon](media/transcriber_activate.gif)
+
+Or by pressing `Command+k` (or `Ctrl+k` for Linux/Windows). Once you've done so, you can interactively "pluck" repeating containers as well as fields of interest:
+
+![Screen recording of the transcriber flow](media/transcriber.gif)
+
+After which, you'll have produced LSD that you can publish [using the languege](#using-the-language).
 
 ### Using the language
 
