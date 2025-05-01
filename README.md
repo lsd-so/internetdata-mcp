@@ -14,6 +14,7 @@ This is the updated MCP server for [LSD](https://lsd.so). The reason behind this
   * [Interaction](#interaction)
   * [Extraction](#extraction)
 * [Extending capabilities with LSD](#extending-capabilities-with-lsd)
+  * [What is a trip?](#what-is-a-trip)
   * [From the bicycle browser](#from-the-bicycle-browser)
   * [Using the language](#using-the-language)
 * [Extending capabilities with TypeScript](#extending-capabilities-with-typescript)
@@ -88,7 +89,11 @@ $ git clone https://github.com/lsd-so/mcp.git
 
 ## Extending capabilities with LSD
 
-For scenarios where you'd like to teach the MCP client a "skill", you can do so with an [LSD trip](https://lsd.so/docs/database/trips). Ultimately, a "trip" is a [published module](https://docs.npmjs.com/about-npm) consisting of an LSD program whether it was derived by [interacting with our local browser](#from-the-bicycle-browser) or by [directly publishing a trip](#directly-publishing-a-trip).
+For scenarios where you'd like to teach the MCP client a "skill", you can do so with an [LSD trip](https://lsd.so/docs/database/trips) ([what is that?](#what-is-a-trip)).
+
+### What is a trip?
+
+A "trip" is a [published module](https://docs.npmjs.com/about-npm) consisting of an LSD program whether it was derived by [interacting with our local browser](#from-the-bicycle-browser) or by [directly publishing a trip](#directly-publishing-a-trip).
 
 ### From the bicycle browser
 
@@ -111,5 +116,17 @@ After which you can publish [using the language](#using-the-language).
 From the workbench, simply edit to publish a trip.
 
 ![A screen recording of filling out trip details](media/save_to_trip.gif)
+
+### Using your own published trip
+
+By default, the MCP server will load in your personal trips
+
+TODO - gif of using trip defined
+
+### Using someone else's published trip
+
+In addition, there is a "trip search" tool which enables you to look for trips that have been publicly published by others.
+
+TODO - gif 
 
 ## Extending capabilities with TypeScript
