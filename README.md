@@ -130,3 +130,15 @@ In addition, there is a "trip search" tool which enables you to look for trips t
 TODO - gif 
 
 ## Extending capabilities with TypeScript
+
+Check out the [internetdata SDK](https://github.com/lsd-so/internetdata) that's used under the hood to bridge with the web. Or, alternatively, get started using the [create-your-internet shorthand](https://github.com/lsd-so/create-your-internet).
+
+```bash
+$ yarn create your-internet
+```
+
+Or, if you prefer npm
+
+```bash
+$ npm create your-internet
+```

@@ -1,7 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { runLSD } from "./lsd";
 
-export const filterDocs = (result: Array<Record<string, any>>) =>
+const filterDocs = (result: Array<Record<string, any>>) =>
   result.filter(
     (row) =>
       row["URL"] ===
@@ -18,14 +18,18 @@ export const filterDocs = (result: Array<Record<string, any>>) =>
         )),
   );
 
+export const getFilteredDocs = async () => {
+  return filterDocs(await runLSD(`SCAN https://lsd.so/docs/database/language`));
+};
+
 export const applyDocsResource = (server: McpServer) => {
   server.resource("lsd_docs", "lsd://docs", async (uri, _) => {
-    const result = await runLSD(`SCAN https://lsd.so/docs/database/language`);
+    const result = getFilteredDocs();
     return {
       contents: [
         {
           uri: uri.href,
-          text: JSON.stringify(filterDocs(result)),
+          text: JSON.stringify(result),
         },
       ],
     };
