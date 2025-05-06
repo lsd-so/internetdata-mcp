@@ -9,6 +9,7 @@ This is the updated MCP server for [LSD](https://lsd.so). The reason behind this
 	* [Configuration file](#configuration-file)
 	* [Environment variables](#environment-variables)
   * [Using an MCP registry](#using-an-mcp-registry)
+	* [Pulse](https://www.pulsemcp.com/servers/lsd-so-internetdata)
   * [From source](#from-source)
 * [Example of usage](#example-of-usage)
   * [End to end](#end-to-end)
@@ -52,7 +53,11 @@ $ export LSD_PASSWORD='<api_key>'
 
 ### Using an MCP registry
 
-Coming soon.
+#### Pulse
+
+https://www.pulsemcp.com/servers/lsd-so-internetdata
+
+More coming soon.
 
 ### From source
 
