@@ -1,6 +1,6 @@
 # LSD MCP
 
-This is the updated MCP server for [LSD](https://lsd.so). The reason behind this update is to effectively leverage dynamic tools that are defined as [trips](https://lsd.so/docs/database/language/types/keywords/according).
+This is the updated MCP server for [LSD](https://lsd.so). The reason behind this update is to effectively leverage dynamic tools that are defined as [trips](https://lsd.so/docs/database/language/types/keywords/according) using [our SDK](https://github.com/lsd-so/internetdata).
 
 ## Contents
 
@@ -11,6 +11,7 @@ This is the updated MCP server for [LSD](https://lsd.so). The reason behind this
   * [Using an MCP registry](#using-an-mcp-registry)
   * [From source](#from-source)
 * [Example of usage](#example-of-usage)
+  * [End to end](#end-to-end)
   * [Interaction](#interaction)
   * [Extraction](#extraction)
 * [Extending capabilities with LSD](#extending-capabilities-with-lsd)
@@ -119,13 +120,13 @@ From the workbench, simply edit to publish a trip.
 
 ### Using your own published trip
 
-By default, the MCP server will load in your personal trips
+By default, the MCP server will load in trips found to be relevant to the request.
 
-TODO - gif of using trip defined
+Todo - gif of using trip defined
 
 ### Using someone else's published trip
 
-In addition, there is a "trip search" tool which enables you to look for trips that have been publicly published by others.
+In addition, there is a "trip search" tool which enables you to look specifically for trips that have been publicly published by others.
 
 TODO - gif 
 
