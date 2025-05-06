@@ -118,18 +118,6 @@ From the workbench, simply edit to publish a trip.
 
 ![A screen recording of filling out trip details](media/save_to_trip.gif)
 
-### Using your own published trip
-
-By default, the MCP server will load in trips found to be relevant to the request.
-
-Todo - gif of using trip defined
-
-### Using someone else's published trip
-
-In addition, there is a "trip search" tool which enables you to look specifically for trips that have been publicly published by others.
-
-TODO - gif 
-
 ## Extending capabilities with TypeScript
 
 Check out the [internetdata SDK](https://github.com/lsd-so/internetdata) that's used under the hood to bridge with the web. Or, alternatively, get started using the [create-your-internet shorthand](https://github.com/lsd-so/create-your-internet).
