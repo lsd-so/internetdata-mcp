@@ -2,6 +2,10 @@
 
 This is the updated MCP server for [LSD](https://lsd.so). The reason behind this update is to effectively leverage dynamic tools that are defined as [trips](https://lsd.so/docs/database/language/types/keywords/according) using [our SDK](https://github.com/lsd-so/internetdata).
 
+<a href="https://glama.ai/mcp/servers/@lsd-so/internetdata-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@lsd-so/internetdata-mcp/badge" alt="LSD Server MCP server" />
+</a>
+
 ## Contents
 
 * [Getting started](#getting-started)
